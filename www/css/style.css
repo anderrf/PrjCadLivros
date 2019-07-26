@@ -1,2 +1,37 @@
 /**/
 
+.container{
+  background: linear-gradient(to bottom, royalblue, purple, yellow);
+}
+
+.linha{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@font-face{
+  font-family: "amerika";
+  src: url("../fonts/AMERIKA_.ttf") format("truetype");
+}
+
+h1{
+  font-family: amerika;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+label{
+  font-family: verdana;
+  font-size: 18px;
+}
+
+.btn{
+  font-family: verdana;
+  font-size: 18px;
+}
+
+input{
+  font-family: verdana;
+  font-size: 18px;
+}
