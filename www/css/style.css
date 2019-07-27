@@ -1,7 +1,10 @@
 /**/
 
-.container{
+body{
   background: linear-gradient(to bottom, royalblue, purple, yellow);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .linha{
@@ -17,21 +20,21 @@
 h1{
   font-family: amerika;
   color: white;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
 }
 
 label{
   font-family: verdana;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .btn{
   font-family: verdana;
-  font-size: 18px;
+  font-size: 15px;
 }
 
-input{
+.inp{
   font-family: verdana;
-  font-size: 18px;
+  font-size: 15px;
 }
