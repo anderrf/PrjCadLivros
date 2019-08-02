@@ -11,6 +11,7 @@
 
   <script>
     $(document).ready(function(){
+      lista();
       desabilita();
     });
   </script>
@@ -21,16 +22,24 @@
 
 </head>
 <body>
-  
   <div class="container">
 
     <div class="row linha">
       <div class="col-xs-12">
-        <h1>Cadastro de livro</h1>
+        <h2>Lista de livro</h2>
       </div>
     </div>
 
     <div class="jumbotron">
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="">Lista:</label>
+            <select class="form-control" name="lista" id="lista"></select>
+          </div>
+        </div>
+      </div>
 
       <div class="row linha">
         <div class="col-xs-12">
@@ -62,12 +71,12 @@
       <div class="row linha">
         <div class="col-xs-4">
           <div class="form-group">
-            <button class="btn btn-block btn-primary" id="btnNovo" onclick="habilita()">Novo</button>
+            <button class="btn btn-block btn-primary" id="btnAlterar" onclick="habilita()">Alterar</button>
           </div>
         </div>
         <div class="col-xs-4">
           <div class="form-group">
-            <button class="btn btn-block btn-success" id="btnSalvar">Salvar</button>
+            <button class="btn btn-block btn-success" id="btnSalvarAlterar">Salvar</button>
           </div>
         </div>
         <div class="col-xs-4">
@@ -80,14 +89,13 @@
       <div class="row linha">
         <div class="col-xs-12">
           <div class="form-group">
-            <button class="btn btn-block btn-info" id="btnLista">Listar</button>
+            <button class="btn btn-block btn-danger" id="btnVoltar">Voltar</button>
           </div>
         </div>
       </div>
 
     </div>
 
-  </div>
-
+  </div>    
 </body>
 </html>
