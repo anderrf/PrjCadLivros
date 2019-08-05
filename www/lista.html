@@ -44,6 +44,15 @@
       <div class="row linha">
         <div class="col-xs-12">
           <div class="form-group">
+            <label for="">Código do livro:</label>
+            <input class="form-control inp" type="text" id="codigo" name="codigo" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <div class="form-group">
             <label for="">Título do livro:</label>
             <input class="form-control inp" type="text" id="titulo" name="titulo">
           </div>
@@ -63,7 +72,7 @@
         <div class="col-xs-12">
           <div class="form-group">
             <label for="">Ano:</label>
-            <input class="form-control inp" type="number" id="ano" name="ano" max="2019" min="1900">
+            <input class="form-control inp" type="number" id="ano" name="ano" max="2019" min="1900" maxlength="4">
           </div>
         </div>
       </div>
@@ -87,9 +96,14 @@
       </div>
 
       <div class="row linha">
-        <div class="col-xs-12">
+        <div class="col-xs-6">
           <div class="form-group">
-            <button class="btn btn-block btn-danger" id="btnVoltar">Voltar</button>
+            <button class="btn btn-block btn-danger" id="btnExcluir">Excluir</button>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <button class="btn btn-block btn-info" id="btnVoltar">Voltar</button>
           </div>
         </div>
       </div>
