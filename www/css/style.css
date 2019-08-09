@@ -45,3 +45,10 @@ label{
   font-family: verdana;
   font-size: 15px;
 }
+
+.rfoto{
+  border-color: mediumseagreen;
+  border-width: 2px;
+  border-style: solid;
+  margin: auto;
+}

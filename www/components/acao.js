@@ -12,6 +12,21 @@ function desabilita(){
   $("#ano").prop("readonly",true);
 }
 
+$(document).on("click", "#btnCamera", function(){
+  navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    destinationType: Camera.DestinationType.DATA_URL, saveToPhotoAlbum:true, });
+
+  function onSuccess(imageData) {
+      click.play();
+      var image = document.getElementById('imgFoto');
+      image.src = "data:image/jpeg;base64," + imageData;
+  }
+  function onFail(message) {
+    alert('Failed because: ' + message);
+  }
+
+});
+
 $(document).on("click", "#btnSalvar", function(){
   var parametros = {
     "livro": $("#titulo").val(),
@@ -113,7 +128,7 @@ $(document).on("click", "#btnSalvarAlterar", function(){
     success: function(data){
       navigator.notification.alert(data);
       desabilita();
-      document.location.reload(true);
+      location.reload();
     },
     //se der errado
     error: function(data){
@@ -131,12 +146,7 @@ $(document).on("click", "#btnExcluir", function(){
     dataType: "json",
     success: function(data){
       navigator.notification.alert(data);
-      $("#codigo").val("");
-      $("#titulo").val("");
-      $("#autor").val("");
-      $("#ano").val("");
-      desabilita();
-      document.location.reload(true);
+      location.reload();
     },
     error: function(data){
       navigator.notification.alert(data);
